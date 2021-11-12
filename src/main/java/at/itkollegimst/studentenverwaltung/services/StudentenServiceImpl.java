@@ -3,9 +3,11 @@ package at.itkollegimst.studentenverwaltung.services;
 import at.itkollegimst.studentenverwaltung.domain.Student;
 import at.itkollegimst.studentenverwaltung.exceptions.StudentNichtGefunden;
 import at.itkollegimst.studentenverwaltung.repositories.DbZugriffStudenten;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class StudentenServiceImpl implements  StudentenService{
 
     private DbZugriffStudenten dbZugriffStudenten;
